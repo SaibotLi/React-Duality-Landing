@@ -9,7 +9,9 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
+  settings: { react: { version: '18.2' } 
+  "css.lint.unknownAtRules": "ignore"
+},
   plugins: ['react-refresh'],
   rules: {
     'react/jsx-no-target-blank': 'off',
@@ -17,5 +19,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+
   },
 }
