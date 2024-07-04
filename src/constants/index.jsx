@@ -39,39 +39,35 @@ export const statistics = [
 export const products = [
     {
         imgURL: shoe4,
-        name: "Tazas",
+        name: "Tazas"
     },
     {
         imgURL: shoe5,
-        name: "Remeras",
+        name: "Remeras"
     },
     {
         imgURL: shoe6,
-        name: "Banderas",
+        name: "Banderas"
     },
     {
         imgURL: shoe7,
-        name: "Gorras",
+        name: "Gorras"
     },
     {
         imgURL: shoe4,
         name: "Banners"
-    }
+    },
     {
         imgURL: shoe5,
         name: "Ploteados"
-    }
+    },
     {
         imgURL: shoe6,
         name: "Botineros"
-    }
+    },
     {
         imgURL: shoe7,
         name: "Mochilas"
-    }
-    {
-        imgURL: shoe4,
-        name: "Varios"
     }
 ];
 
