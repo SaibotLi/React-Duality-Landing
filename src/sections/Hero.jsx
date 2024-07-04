@@ -9,21 +9,20 @@ const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
-<section id="home" className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
-
+<section id="inicio" className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
   {/*Shows Duality text*/}
   <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:px-4 pt-0">
     <h1 className="mt-10 text-8xl max-sm:text-6xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight font-bold">
       <span className="xl:whitespace-nowrap relative z-10 pr-10">Haciendo de tu <br/> imaginación</span>
       <br />
-      <span className="text-orange-600 inline-block mt-3">Realidad</span>
+      <span className="text-orange-600 inline-block mt-3">realidad</span>
     </h1>
 <p className="text-gray-500 text-lg leading-8 mt-6 mb-14 max-w-full sm:max-w-sm">
       Personalizamos todo lo que puedas imaginar. <br />
       Camperas, remeras, gorras, tazas, banderas, vos pedilo. <br /> 
       Lo necesitas para mañana y lo tenemos para ayer.
     </p>
-    <Button label="Hace tu pedido" iconUrl={arrowRight} alt="Icono Flecha Derecha" />
+    <Button label="Hace tu pedido" iconUrl={arrowRight} alt="Icono Flecha Derecha" href="#contacto"/>
   </div>
   
 {/* Shows shoe imgs*/}
