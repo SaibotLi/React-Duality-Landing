@@ -15,13 +15,13 @@ const Navbar = () => {
 <div className="container px-4 mx-auto relative text-sm">
     <div className="flex justify-between items-center">
 
-        {/* Logo */}
+{/* Logo */}
         <div className="flex items-center flex-shrink-0">
             <img className="h-10 w-10 mr-2"src={logo} alt="" />
             <span className="text-xl tracking-tight">Duality</span>
         </div>
 
-        {/* Handle items from ./constants*/}
+{/* Handle items from ./constants*/}
         <ul className="hidden lg:flex ml-14 space-x-12">
 {navItems.map((item, index) => (
     <li key={index}>
