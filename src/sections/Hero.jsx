@@ -9,7 +9,7 @@ const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
-    <section id="inicio" className="w-full flex xl:flex-row flex-col justify-center items-center min-h-screen gap-10 max-container px-4">
+    <section className="w-full flex xl:flex-row flex-col justify-center items-center min-h-screen gap-10 max-container px-4">
     {/* Shows Duality text */}
     <div className="relative xl:w-2/5 flex flex-col justify-center items-center xl:items-start w-full pt-0">
         <h1 className="mt-10 text-8xl max-sm:text-6xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight font-bold text-center xl:text-left">
