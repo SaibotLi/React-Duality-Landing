@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
 
@@ -23,7 +24,7 @@ const Navbar = () => {
                     <ul className="hidden lg:flex ml-14 space-x-12">
                         {navItems.map((item, index) => (
                             <li key={index}>
-                                <a href={item.href}> {item.label} </a>
+                                <Link to href={item.href}> {item.label} </Link>
                             </li>
                         ))}
                     </ul>

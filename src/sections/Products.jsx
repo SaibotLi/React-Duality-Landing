@@ -2,7 +2,7 @@ const Products = () => {
   return (
 <div>
 {/*The above div is the Parent-flexbox*/}
-<div> 
+<div>
 {/* List with different type of products */}
 <ul>
     <li>Product 1</li>

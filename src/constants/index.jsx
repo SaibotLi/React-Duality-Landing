@@ -1,8 +1,8 @@
 export const navItems = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Productos", href: "#productos" },
-  { label: "Sobre Nosotros", href: "#sobreNosotros" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "/" },
+  { label: "Productos", href: "/products" },
+  { label: "Sobre Nosotros", href: "/sobreNosotros" },
+  { label: "Contacto", href: "/contacto"},
 ];
 
 import { facebook, instagram, twitter } from "../assets/icons";
