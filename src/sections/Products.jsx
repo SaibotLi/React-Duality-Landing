@@ -26,9 +26,9 @@ const Products = () => {
         {selectedProduct && productData[selectedProduct] ? (
           <div className="grid grid-cols-3 gap-3 w-full content-center">
             {productData[selectedProduct].map((imgUrl, index) => (
-              <div key={index} className="m-2 flex justify-center flex-wrap py-5 px-2">
+              <picture key={index} className="m-2 flex justify-center flex-wrap py-5 px-2">
                 <img src={imgUrl} alt={selectedProduct} className="w-32 h-32 object-cover" />
-              </div>
+              </picture>
             ))}
           </div>
         ) : (
