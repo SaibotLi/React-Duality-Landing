@@ -12,6 +12,8 @@ const Products = () => {
   return (
   <section className="h-screen w-full flex">
 
+    {/* MAKE THIS RESPONSIVE */}
+
       {/* Products side list */}
       <aside className="h-screen w-1/4">
         <nav className="flex items-center justify-start h-full">

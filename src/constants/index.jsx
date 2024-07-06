@@ -1,8 +1,8 @@
 export const navItems = [
   { label: "Inicio", href: "/" },
   { label: "Productos", href: "/products" },
-  { label: "Sobre Nosotros", href: "/sobreNosotros" },
-  { label: "Contacto", href: "/contacto"},
+  { label: "Sobre Nosotros", href: "#sobreNosotros" },
+  { label: "Contacto", href: "#contacto"},
 ];
 
 import { facebook, instagram, twitter } from "../assets/icons";
@@ -26,35 +26,43 @@ export const shoes = [
 export const products = [
     {
         imgURL: shoe4,
-        name: "Tazas"
+        name: "Tazas",
+        link: "/tazas"
     },
     {
         imgURL: shoe5,
-        name: "Remeras"
+        name: "Remeras",
+        link: "/remeras"
     },
     {
         imgURL: shoe6,
-        name: "Banderas"
+        name: "Banderas",
+        link: "/banderas"
     },
     {
         imgURL: shoe7,
-        name: "Gorras"
+        name: "Gorras",
+        link: "/gorras"
     },
     {
         imgURL: shoe4,
-        name: "Banners"
+        name: "Banners",
+        link: "/products"
     },
     {
         imgURL: shoe5,
-        name: "Ploteados"
+        name: "Ploteados",
+        link: "/ploteados"
     },
     {
         imgURL: shoe6,
-        name: "Botineros"
+        name: "Botineros",
+        link: "/botineros"
     },
     {
         imgURL: shoe7,
-        name: "Mochilas"
+        name: "Mochilas",
+        link: "/mochilas"
     }
 ];
 
