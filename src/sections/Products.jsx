@@ -5,8 +5,6 @@ import itemList from "../components/itemList";
   - Probably do that by using react-router-dom, check NavBar for more details
   */}
 
-
-
 const Products = () => {
   return (
     <section>
@@ -20,7 +18,7 @@ const Products = () => {
     {itemList}
   </ul>
   </aside>
-
+  
   <div>
 
 {/* 
@@ -30,8 +28,8 @@ const Products = () => {
 */}
 
   </div>
-
-    </section>
+  
+</section>
   );
 }
 
