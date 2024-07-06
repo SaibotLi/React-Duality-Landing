@@ -59,39 +59,27 @@ export const products = [
 ];
 
 export const productItems = [
-    {
-        name: "Tazas",
-        link: "/tazas"
-    },
-    {
-        name: "Remeras",
-        link: "/remeras"
-    },
-    {
-        name: "Banderas",
-        link: "/banderas"
-    },
-    {
-        name: "Gorras",
-        link: "/gorras"
-    },
-    {
-        name: "Banners",
-        link: "/banners"
-    },
-    {
-        name: "Ploteados",
-        link: "ploteados"
-    },
-    {
-        name: "Botineros",
-        link: "/botineros"
-    },
-    {
-        name: "Mochilas",
-        link: "/mochilas"
-    }
-]
+    { name: "Tazas", link: "/tazas" },
+    { name: "Remeras", link: "/remeras" },
+    { name: "Banderas", link: "/banderas" },
+    { name: "Gorras", link: "/gorras" },
+    { name: "Banners", link: "/banners" },
+    { name: "Ploteados", link: "/ploteados" },
+    { name: "Botineros", link: "/botineros" },
+    { name: "Mochilas", link: "/mochilas" }
+  ];
+  
+  {/* ADD PHOTOS FROM DIFFERENT PRODUCTS HERE, IMPORT THEM FIRST */}
+  export const productData = {
+    Tazas: [shoe4, shoe4, shoe4],
+    Remeras: [shoe5, shoe5, shoe5],
+    Banderas: [shoe6, shoe6, shoe6],
+    Gorras: [shoe7],
+    Banners: [shoe7],
+    Ploteados: [shoe7],
+    Botineros: [shoe7],
+    Mochilas: [shoe7],
+  };
 export const footerLinks = [
     {
         title: "Products",

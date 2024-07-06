@@ -1,8 +1,19 @@
 import { productItems } from "../constants";
 
-{/*Function that creates a list of each product */}
-const itemList = productItems.map((item, index) => (
-    <li key={index}>{item.name}</li>
-  ));
+const ItemList = ({ onSelect }) => {
+  return (
+    <ul className="ml-40">
+      {productItems.map((item, index) => (
+        <li
+          className="relative flex items-center px-3 py-2 my-1 font-medium rounded-md cursor-pointer transition-colors"
+          key={index}
+          onClick={() => onSelect(item.name)}
+        >
+          {item.name}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
-  export default itemList
+export default ItemList;
