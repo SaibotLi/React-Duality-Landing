@@ -1,23 +1,29 @@
+import { itemList } from "../components/itemList"
+
+{/*
+  - Add functionality to the list of each product, so when the user clicks a product it renders the images
+  - Probably do that by using react-router-dom, check NavBar for more details
+  */}
+
+
+
 const Products = () => {
   return (
+    <section>
+ {/* List with different type of products */}
 <div>
-{/*The above div is the Parent-flexbox*/}
-<div>
-{/* List with different type of products */}
-<ul>
-    <li>Product 1</li>
-    <li>Product 2</li>
-    <li>Product 3</li>
-    <li>Product 4</li>
-    <li>Product 5</li>
-    <li>Product 6</li>
-</ul>
-</div>
-  <div>
-  {/* Render selected product on a grid */}
-  </div>
-  </div>
-  )
+       
+        <ul>
+          {itemList}
+        </ul>
+      </div>
+
+      <div>
+        {/* Render selected product on a grid */}
+      </div>
+
+    </section>
+  );
 }
 
-export default Products
+export default Products;

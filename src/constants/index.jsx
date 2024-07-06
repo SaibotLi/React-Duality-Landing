@@ -58,6 +58,40 @@ export const products = [
     }
 ];
 
+export const productItems = [
+    {
+        name: "Tazas",
+        link: "/tazas"
+    },
+    {
+        name: "Remeras",
+        link: "/remeras"
+    },
+    {
+        name: "Banderas",
+        link: "/banderas"
+    },
+    {
+        name: "Gorras",
+        link: "/gorras"
+    },
+    {
+        name: "Banners",
+        link: "/banners"
+    },
+    {
+        name: "Ploteados",
+        link: "ploteados"
+    },
+    {
+        name: "Botineros",
+        link: "/botineros"
+    },
+    {
+        name: "Mochilas",
+        link: "/mochilas"
+    }
+]
 export const footerLinks = [
     {
         title: "Products",
