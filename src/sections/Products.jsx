@@ -20,12 +20,12 @@ const Products = () => {
       </aside>
 
        {/* Product set = Show product img*/}
-      <div className="flex-1 flex flex-wrap justify-center items-center bg-orange-800">
+      <div className="grid grid-cols-3 content-center grid-rows-auto w-full bg-orange-800">
         {selectedProduct && productData[selectedProduct] ? (
           productData[selectedProduct].map((imgUrl, index) => (
-            <div key={index} className="m-2">
+            <div key={index} className="m-2 flex justify-center flex-wrap py-5 px-2">
               <img src={imgUrl} alt={selectedProduct} className="w-32 h-32 object-cover" />
-            </div>
+              </div>
           ))
         ) : (
           <p className="text-white font-semibold">Elige un producto para ver imágenes.</p> // Message when no product is selected

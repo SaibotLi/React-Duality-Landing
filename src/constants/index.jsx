@@ -71,7 +71,7 @@ export const productItems = [
   
   {/* ADD PHOTOS FROM DIFFERENT PRODUCTS HERE, IMPORT THEM FIRST */}
   export const productData = {
-    Tazas: [shoe4, shoe4, shoe4],
+    Tazas: [shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4],
     Remeras: [shoe5, shoe5, shoe5],
     Banderas: [shoe6, shoe6, shoe6],
     Gorras: [shoe7],
