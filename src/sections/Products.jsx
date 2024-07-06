@@ -10,31 +10,30 @@ const Products = () => {
   };
 
   return (
-  <section className="h-screen w-full flex">
-
-    {/* MAKE THIS RESPONSIVE */}
+    <section className="min-h-screen w-full flex flex-col md:flex-row">
 
       {/* Products side list */}
-      <aside className="h-screen w-1/4">
+      <aside className="w-full md:w-1/4 overflow-y-auto">
         <nav className="flex items-center justify-start h-full">
           <ItemList onSelect={handleSelect} />
         </nav>
       </aside>
 
-      {/* Product set = Show product img */}
-      <div className="w-full bg-orange-800 flex justify-center items-center">
+      {/* Product images */}
+      <div className="flex-1 bg-orange-800 flex justify-center items-center">
         {selectedProduct && productData[selectedProduct] ? (
-          <div className="grid grid-cols-3 gap-3 w-full content-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-40 max-w-screen-lg mx-auto p-4">
             {productData[selectedProduct].map((imgUrl, index) => (
-              <picture key={index} className="m-2 flex justify-center flex-wrap py-5 px-2">
-                <img src={imgUrl} alt={selectedProduct} className="w-32 h-32 object-cover" />
-              </picture>
+              <div key={index} className="m-4 flex justify-center">
+                <img src={imgUrl} alt={selectedProduct} className="w-48 h-48 object-cover rounded-lg" />
+              </div>
             ))}
           </div>
         ) : (
           <p className="text-white text-center font-semibold">Elige un producto para ver imágenes.</p>
         )}
       </div>
+
     </section>
   );
 };

@@ -3,6 +3,7 @@ import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
 import ShowProducts from './sections/ShowProducts';
 import Products from './sections/Products';
+import Contacto from './sections/Contacto';
 
 const App = () => {
   return (
@@ -17,6 +18,9 @@ const App = () => {
               </section>
               <section>
                 <ShowProducts />
+              </section>
+              <section>
+                <Contacto />
               </section>
             </>
           } />
