@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ItemList from "../components/ItemList";
 import { productData } from "../constants";
-import Footer from "../sections/Footer";
 
 const Products = ({ onProductSelect }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -36,8 +35,6 @@ const Products = ({ onProductSelect }) => {
           )}
         </div>
       </section>
-
-      <Footer selectedProduct={selectedProduct} />
     </>
   );
 };

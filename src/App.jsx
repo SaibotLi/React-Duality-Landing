@@ -5,11 +5,8 @@ import ShowProducts from './sections/ShowProducts';
 import Products from './sections/Products';
 import Contacto from './sections/Contacto';
 import Footer from './sections/Footer';
-import { useState } from 'react';
 
 const App = () => {
-  const [selectedProduct, setSelectedProduct] = useState(null);
-
   return (
     <Router>
       <main className="relative">
@@ -22,12 +19,12 @@ const App = () => {
               </section>
               <section>
                 <ShowProducts />
-              </section>
-              <Contacto />
-              <Footer selectedProduct={selectedProduct} />
+                </section>
+                <Contacto />
+                <Footer />
             </>
           } />
-          <Route path="/products" element={<Products onProductSelect={setSelectedProduct} />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </main>
     </Router>
