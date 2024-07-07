@@ -90,37 +90,30 @@ export const productItems = [
   };
 export const footerLinks = [
     {
-        title: "Products",
+        title: "Productos",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
-        ],
+            { name: "Tazas", link: "/products" },
+            { name: "Remeras", link: "/products" },
+            { name: "Banderas", link: "/products" },
+            { name: "Gorras", link: "/products" },
+            { name: "Banners", link: "/products" },
+            { name: "Ploteados", link: "/products" },
+            { name: "Botineros", link: "/products" },
+            { name: "Mochilas", link: "/products" }
+          ],
     },
     {
-        title: "Help",
+        title: "¿Querés contarnos tu idea?",
         links: [
-            { name: "About us", link: "/" },
-            { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
-        ],
-    },
-    {
-        title: "Get in touch",
-        links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "duality.creative.design@gmail.com", link: "mailto:duality.creative.design@gmail.com" },
+            { name: "3455-487964", link: "<tel:+5493455487964>"},
+            {name: `Mandanos un WhatsApp`, link: "https://api.whatsapp.com/send/?phone=543455487964&text&type=phone_number&app_absent=0"}
         ],
     },
 ];
 
 export const socialMedia = [
-    { src: facebook, alt: "facebook logo" },
-    { src: twitter, alt: "twitter logo" },
-    { src: instagram, alt: "instagram logo" },
+    { src: facebook, alt: "facebook logo", href:"https://www.facebook.com/profile.php?id=100083092130735"},
+    { src: twitter, alt: "twitter logo", href:"https://api.whatsapp.com/send/?phone=543455487964&text&type=phone_number&app_absent=0" },
+    { src: instagram, alt: "instagram logo", href:"https://www.instagram.com/duality_personaliza2/" },
 ];

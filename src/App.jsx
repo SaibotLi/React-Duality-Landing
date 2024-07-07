@@ -4,8 +4,12 @@ import Hero from './sections/Hero';
 import ShowProducts from './sections/ShowProducts';
 import Products from './sections/Products';
 import Contacto from './sections/Contacto';
+import Footer from './sections/Footer';
+import { useState } from 'react';
 
 const App = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   return (
     <Router>
       <main className="relative">
@@ -19,12 +23,11 @@ const App = () => {
               <section>
                 <ShowProducts />
               </section>
-              <section>
-                <Contacto />
-              </section>
+              <Contacto />
+              <Footer selectedProduct={selectedProduct} />
             </>
           } />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<Products onProductSelect={setSelectedProduct} />} />
         </Routes>
       </main>
     </Router>
