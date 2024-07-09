@@ -5,6 +5,7 @@ import ShowProducts from './sections/ShowProducts';
 import Products from './sections/Products';
 import Contacto from './sections/Contacto';
 import Footer from './sections/Footer';
+import AboutUs from './sections/AboutUs';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             </>
           } />
           <Route path="/products" element={<Products />} />
+          <Route path="/sobreNosotros" element={<AboutUs />} />
         </Routes>
       </main>
     </Router>

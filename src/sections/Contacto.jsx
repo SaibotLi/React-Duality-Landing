@@ -22,7 +22,7 @@ const Contacto = () => {
   };
 
   return (
-    <form 
+    <form
     id="contacto"
       ref={form} 
       onSubmit={sendEmail} 
