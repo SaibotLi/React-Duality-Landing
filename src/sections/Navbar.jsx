@@ -29,16 +29,20 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <Link
-                  to={item.href}
-                  onClick={item.label === "Inicio" ? handleInicioClick : null}
-                >
-                  {item.label}
-                </Link>
+                {item.href.startsWith("/") ? (
+                  <Link
+                    to={item.href}
+                    onClick={item.label === "Inicio" ? handleInicioClick : null}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a href={item.href}>{item.label}</a>
+                )}
               </li>
             ))}
           </ul>
-
+          
           {/* User */}
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a href="#" className="py-2 px-3 border rounded-md">
