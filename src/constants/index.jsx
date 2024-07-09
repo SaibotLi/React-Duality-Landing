@@ -107,7 +107,9 @@ export const footerLinks = [
         links: [
             { name: "duality.creative.design@gmail.com", link: "mailto:duality.creative.design@gmail.com" },
             { name: "3455-487964", link: "<tel:+5493455487964>"},
-            {name: `Mandanos un WhatsApp`, link: "https://api.whatsapp.com/send/?phone=543455487964&text&type=phone_number&app_absent=0"}
+            {name: `Mandanos un WhatsApp`, link: "https://api.whatsapp.com/send/?phone=543455487964&text&type=phone_number&app_absent=0"},
+            {name: "Sarmiento 851"},
+            {name: "Villaguay, Entre Rios, Argentina."}
         ],
     },
 ];

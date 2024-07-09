@@ -1,8 +1,65 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contacto = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_r9xsq43', 'template_1tt3v1g', form.current, {
+        publicKey: 'QdHIqa46yq6eRNvo8',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen w-full" id="contacto">
+    <form 
+      ref={form} 
+      onSubmit={sendEmail} 
+      className="flex flex-col mx-auto rounded-md bg-gray-800 text-white justify-center min-h-min text-center w-full max-w-4xl px-6 py-8 mb-10 mt-2"
+    >
+      <label className="mb-2 text-lg">Nombre</label>
+      <input 
+        type="text" 
+        name="user_name" 
+        className="mb-4 p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 w-3/4 mx-auto"
+      />
+      <label className="mb-2 text-lg">Email</label>
+      <input 
+        type="email" 
+        name="user_email" 
+        className="mb-4 p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 w-3/4 mx-auto"
+      />
+      <label className="mb-2 text-lg">Consulta y número de contacto</label>
+      <textarea 
+        name="message" 
+        className="mb-4 p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 w-3/4 mx-auto"
+      />
+      <input 
+        type="submit" 
+        className="flex justify-center hover:shadow-none transition-shadow mt-4 mb-4 w-32 border-2 border-black outline-none shadow-lg shadow-amber-800 cursor-pointer mx-auto bg-amber-500 rounded-md text-white"
+        value="Send" 
+      />
+    </form>
+  );
+};
+
+export default Contacto;
+
+{/* const Contacto = () => {
+  return (
+    <section className="flex flex-col items-center justify-center min-h-min mb-10 w-full">
       <h2 className="text-white mb-2">Contanos, ¿Qué necesitás?</h2>
-      <form className="w-full max-w-lg px-4">
+      <form className="w-full max-w-4xl px-4">
         <div className="flex justify-between w-full mb-4">
           <div className="w-2/5">
             <input name="nombre" type="text" placeholder="Nombre Completo" id="nombre" className="w-full p-4 bg-transparent border-2 border-amber-500 outline-none rounded-md my-3 text-white" autoComplete="off" required />
@@ -26,7 +83,7 @@ const Contacto = () => {
         </div>
 
         <div className="w-full mb-4">
-          <textarea name="mensaje" id="mensaje" cols="30" rows="6" placeholder="Me gustaria una remera que diga..." className="w-full p-4 bg-transparent border-2 border-amber-500 outline-none rounded-md my-3 text-white" autoComplete="off" required></textarea>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Me gustaria una remera que diga..." className="w-full p-4 bg-transparent border-2 border-amber-500 outline-none rounded-md my-3 text-white" autoComplete="off" required></textarea>
           <div className="text-red-600 text-left mt-1 mb-2 hidden">Introduce un mensaje</div>
         </div>
         
@@ -39,3 +96,7 @@ const Contacto = () => {
 };
 
 export default Contacto;
+
+*/}
+
+
