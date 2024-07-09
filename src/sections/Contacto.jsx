@@ -27,21 +27,28 @@ const Contacto = () => {
       onSubmit={sendEmail} 
       className="flex flex-col mx-auto rounded-md bg-gray-800 text-white justify-center min-h-min text-center w-full max-w-4xl px-6 py-8 mb-10 mt-2"
     >
-      <label className="mb-2 text-lg">Nombre</label>
-      <input 
+      <label htmlFor="user_name" className="mb-2 text-lg">Nombre</label>
+      <input
+      required
         type="text" 
+                    id='user_name'
         name="user_name" 
         className="mb-4 p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 w-3/4 mx-auto"
       />
-      <label className="mb-2 text-lg">Email</label>
+      <label htmlFor="user_email" className="mb-2 text-lg">Email</label>
       <input 
+            required
         type="email" 
         name="user_email" 
+        id="user_email"
         className="mb-4 p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 w-3/4 mx-auto"
       />
-      <label className="mb-2 text-lg">Consulta y número de contacto</label>
-      <textarea 
-        name="message" 
+      <label htmlFor="message" className="mb-2 text-lg">Consulta</label>
+      <textarea
+            required
+            id='message'
+        name="message"
+        placeholder="Hola, ¿Cuánto me saldrían 5 remeras negras talle L personalizadas? Las necesito ya. Escribime y te paso el diseño, mi número es 3455123123."
         className="mb-4 p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 w-3/4 mx-auto"
       />
       <input 
