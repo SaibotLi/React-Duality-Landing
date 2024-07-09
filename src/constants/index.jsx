@@ -109,7 +109,7 @@ export const footerLinks = [
             { name: "3455-487964", link: "<tel:+5493455487964>"},
             {name: `Mandanos un WhatsApp`, link: "https://api.whatsapp.com/send/?phone=543455487964&text&type=phone_number&app_absent=0"},
             {name: "Sarmiento 851"},
-            {name: "Villaguay, Entre Rios, Argentina."}
+            {name: "Villaguay, Entre Rios, Argentina"}
         ],
     },
 ];
