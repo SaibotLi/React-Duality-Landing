@@ -7,12 +7,12 @@ const AboutUs = () => {
           <h1 className="flex justify-start w-2/4 text-black">Sobre nosotros</h1>
           <p></p>
           </div>
-          <div className="w-full">
+          <div className="w-full flex justify-center">
           <img className='w-2/4 h-[282px] bg-none max-sm:w-[200px] max-sm:h-[200px]' src={bigShoe1} />
           </div>
 </div>
 <div className="w-full bg-gray-500 grid grid-rows-2 grid-cols-2">
-<div className="w-full">
+          <div className="w-full flex justify-center">
           <img className='w-2/4 h-[282px] bg-none max-sm:w-[200px] max-sm:h-[200px]' src={bigShoe1} />
           </div>
           <div className="w-full bg-white">
