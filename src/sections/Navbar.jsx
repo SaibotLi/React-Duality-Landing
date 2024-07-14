@@ -65,16 +65,29 @@ const Navbar = () => {
         {mobileDrawerOpen && (
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
-              {navItems.map((item, index) => (
-                <li key={index} className="py-4">
-                  <Link
-                    to={item.href}
-                    onClick={item.label === "Inicio" ? handleInicioClick : null}
-                  >
+            {navItems.map((item, index) => (
+        <li key={index} className="py-4">
+          {item.href.startsWith("/") ? (
+            <Link
+              to={item.href}
+              onClick={item.label === "Inicio" ? handleInicioClick : null}
+            >
+              {item.label}
+            </Link>
+          ) : (
+            <a href={item.href}>{item.label}</a>
+          )}
+        </li>
+      ))}
+
+              {/*
+                            <li key={index}>
+                
                     {item.label}
                   </Link>
-                </li>
-              ))}
+                
+              </li>
+               */}
             </ul>
             <div className="flex space-x-6">
               <a href="#" className="py-2 px-3 border rounded-md">
