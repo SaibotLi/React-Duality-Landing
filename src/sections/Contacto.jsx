@@ -45,7 +45,7 @@ const Contacto = () => {
         className="mb-4 p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 w-3/4 mx-auto"
       />
       <label htmlFor="message" className="mb-2 text-lg">Consulta</label>
-      <textarea
+      <textarea rows={5} cols={60}
             required
             id='message'
         name="message"

@@ -21,7 +21,7 @@ const Products = ({ onProductSelect }) => {
         </aside>
 
         {/* Product images */}
-        <div className="flex-1 bg-orange-800 flex justify-center items-center">
+        <div className="flex-1 bg-orange-800 flex justify-center items-center mb-10">
           {selectedProduct && productData[selectedProduct] ? (
             <div id={selectedProduct.toLowerCase()} className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-40 max-w-screen-lg mx-auto p-4">
               {productData[selectedProduct].map((imgUrl, index) => (

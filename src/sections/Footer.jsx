@@ -33,14 +33,14 @@ const Footer = () => {
 {/* Redirect to /Products */}
 <div className='flex flex-1 flex-wrap justify-around gap-6 lg:gap-10 w-full lg:w-1/3'>
   {footerLinks.map((section) => (
-    <div key={section.title} className="mb-8 lg:mb-0 text-center w-full sm:w-1/2 lg:w-auto content-center">
+    <div key={section.title} className="mb-6 mt-0.5 lg:mb-0 text-center w-full sm:w-1/2 lg:w-auto content-center">
       <h4 className='font-montserrat text-xl leading-normal font-medium mb-6 text-orange-500'>
         {section.title}
       </h4>
       <ul>
         {section.links.map((link) => (
           <li
-            className='mt-3 font-montserrat text-base leading-normal text-white text-center'
+            className='mt-2.5 font-montserrat text-base leading-normal text-white'
             key={link.name}
           >
             <a href={link.link}>{link.name}</a>

@@ -79,15 +79,7 @@ const Navbar = () => {
           )}
         </li>
       ))}
-
-              {/*
-                            <li key={index}>
-                
-                    {item.label}
-                  </Link>
-                
-              </li>
-               */}
+      
             </ul>
             <div className="flex space-x-6">
               <a href="#" className="py-2 px-3 border rounded-md">
