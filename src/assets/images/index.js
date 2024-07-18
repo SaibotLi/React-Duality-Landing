@@ -1,16 +1,14 @@
-import bigShoe1 from './big-shoe1.png'
-import bigShoe2 from './big-shoe2.png'
-import bigShoe3 from './big-shoe3.png'
-
 import footerLogo from './footer-logo.svg'
 import headerLogo from './header-logo.svg'
 
 import offer from './offer.svg'
 import thumbnailBackground from './thumbnail-background.svg'
-import thumbnailShoe1 from './thumbnail-shoe1.svg'
-import thumbnailShoe2 from './thumbnail-shoe2.png'
-import thumbnailShoe3 from './thumbnail-shoe3.svg'
-
+import thumbnailImg1 from './thumbnail1.png'
+import thumbnailImg2 from './thumbnail2.jpeg'
+import thumbnailImg3 from './thumbnail3.png'
+import bigImg1 from "./thumbnail1.png"
+import bigImg2 from "./thumbnail2.jpeg"
+import bigImg3 from "./thumbnail3.png"
 
 import accesorio1 from "./Accesorio1.jpeg"
 import accesorio2 from "./Accesorio2.png"
@@ -29,17 +27,17 @@ import gorra1 from "./Gorras1.jpeg"
 import banner from "./Banner1.png"
 
 export {
-    bigShoe1,
-    bigShoe2,
-    bigShoe3,
+    bigImg1,
+    bigImg2,
+    bigImg3,
     footerLogo,
     headerLogo,
 
     offer,
     thumbnailBackground,
-    thumbnailShoe1,
-    thumbnailShoe2,
-    thumbnailShoe3,
+    thumbnailImg1,
+    thumbnailImg2,
+    thumbnailImg3,
 
     accesorio1,
     accesorio2,

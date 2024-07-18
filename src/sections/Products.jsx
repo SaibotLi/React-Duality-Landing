@@ -21,9 +21,9 @@ const Products = ({ onProductSelect }) => {
         </aside>
 
         {/* Product images */}
-        <div className="flex-1 bg-orange-800 flex justify-center items-center mb-10">
+        <div className="flex-1 bg-orange-800 flex justify-center items-start mb-10">
           {selectedProduct && productData[selectedProduct] ? (
-            <div id={selectedProduct.toLowerCase()} className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-40 max-w-screen-lg mx-auto p-4">
+            <div id={selectedProduct.toLowerCase()} className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-40 max-w-screen-lg mx-auto p-4 h-5/6 place-content-start">
               {productData[selectedProduct].map((imgUrl, index) => (
                 <div key={index} className="m-4 flex justify-center">
                   <img src={imgUrl} alt={selectedProduct} className="w-48 h-48 object-cover rounded-lg" />
@@ -31,7 +31,7 @@ const Products = ({ onProductSelect }) => {
               ))}
             </div>
           ) : (
-            <p className="text-white text-center font-semibold">Elige un producto para ver imágenes.</p>
+            <p className="flex items-center h-screen text-white font-semibold">Elige un producto para ver imágenes.</p>
           )}
         </div>
       </section>

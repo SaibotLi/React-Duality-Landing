@@ -1,14 +1,14 @@
-const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImg }) => {
+const ShoeCard = ({ imgUrl, changeThumbnailImage, thumbnailImg }) => {
   const handleClick = () => {
-    if (bigShoeImg !== imgUrl.bigShoe) {
-      changeBigShoeImage(imgUrl.bigShoe);
+    if (thumbnailImg !== imgUrl.thumbnail) {
+      changeThumbnailImage(imgUrl.thumbnail);
     }
   };
 
   return (
     <div
       className={`border-2 rounded-xl ${
-        bigShoeImg === imgUrl.bigShoe
+        thumbnailImg === imgUrl.thumbnail
           ? "border-orange-500"
           : "border-transparent"
       } cursor-pointer max-sm:flex-1`}
@@ -17,7 +17,7 @@ const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImg }) => {
       <div className='flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4'>
         <img
           src={imgUrl.thumbnail}
-          alt='shoe colletion'
+          alt='collection of products'
           width={127}
           height={103.34}
           className='object-contain'

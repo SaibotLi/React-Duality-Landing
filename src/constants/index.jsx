@@ -6,20 +6,20 @@ export const navItems = [
 ];
 
 import { facebook, instagram, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { thumbnailImg1, thumbnailImg2, thumbnailImg3 } from "../assets/images";
 import { accesorio1, accesorio2, bandera1, bandera2, banner, gorra1, mochila2, ploteado1, remera2, remeraF1, remeraT1, sobreNosotros1, taza1, taza2 } from "../assets/images";
 export const shoes = [
     {
-        thumbnail: thumbnailShoe1,
-        bigShoe: bigShoe1,
+        thumbnail: thumbnailImg1,
+        bigShoe: thumbnailImg1,
     },
     {
-        thumbnail: thumbnailShoe2,
-        bigShoe: bigShoe2,
+        thumbnail: thumbnailImg2,
+        bigShoe: thumbnailImg2,
     },
     {
-        thumbnail: thumbnailShoe3,
-        bigShoe: bigShoe3,
+        thumbnail: thumbnailImg3,
+        bigShoe: thumbnailImg3,
     },
 ];
 
@@ -74,7 +74,7 @@ export const productItems = [
     { name: "Banners", link: "/banners" },
     { name: "Ploteados", link: "/ploteados" },
     { name: "Botineros", link: "/botineros" },
-    { name: "Mochilas", link: "/mochilas" }
+    { name: "Accesorios", link: "/mochilas" }
   ];
   
   {/* ADD PHOTOS FROM DIFFERENT PRODUCTS HERE, IMPORT THEM FIRST */}
@@ -99,7 +99,7 @@ export const footerLinks = [
             { name: "Banners", link: "/products" },
             { name: "Ploteados", link: "/products" },
             { name: "Botineros", link: "/products" },
-            { name: "Mochilas", link: "/products" }
+            { name: "Accesorios", link: "/products" }
           ],
     },
     {
