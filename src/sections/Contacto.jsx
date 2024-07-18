@@ -55,7 +55,7 @@ const Contacto = () => {
       <input 
         type="submit" 
         className="flex justify-center hover:shadow-none transition-shadow mt-4 mb-4 w-32 border-2 border-black outline-none shadow-lg shadow-amber-800 cursor-pointer mx-auto bg-amber-500 rounded-md text-white"
-        value="Send" 
+        value="Enviar" 
       />
     </form>
   );
