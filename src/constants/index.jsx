@@ -6,8 +6,8 @@ export const navItems = [
 ];
 
 import { facebook, instagram, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
-
+import { bigShoe1, bigShoe2, bigShoe3, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { accesorio1, accesorio2, bandera1, bandera2, banner, gorra1, mochila2, ploteado1, remera2, remeraF1, remeraT1, sobreNosotros1, taza1, taza2 } from "../assets/images";
 export const shoes = [
     {
         thumbnail: thumbnailShoe1,
@@ -25,44 +25,44 @@ export const shoes = [
 
 export const products = [
     {
-        imgURL: shoe4,
+        imgURL: taza1,
         name: "Tazas",
         link: "/tazas"
     },
     {
-        imgURL: shoe5,
+        imgURL: remera2,
         name: "Remeras",
         link: "/remeras"
     },
     {
-        imgURL: shoe6,
+        imgURL: bandera2,
         name: "Banderas",
         link: "/banderas"
     },
     {
-        imgURL: shoe7,
+        imgURL: gorra1,
         name: "Gorras",
         link: "/gorras"
     },
     {
-        imgURL: shoe4,
+        imgURL: banner,
         name: "Banners",
         link: "/products"
     },
     {
-        imgURL: shoe5,
+        imgURL: ploteado1,
         name: "Ploteados",
         link: "/ploteados"
     },
     {
-        imgURL: shoe6,
+        imgURL: mochila2,
         name: "Botineros",
         link: "/botineros"
     },
     {
-        imgURL: shoe7,
-        name: "Mochilas",
-        link: "/mochilas"
+        imgURL: accesorio2,
+        name: "Accesorios",
+        link: "/productos"
     }
 ];
 
@@ -79,14 +79,14 @@ export const productItems = [
   
   {/* ADD PHOTOS FROM DIFFERENT PRODUCTS HERE, IMPORT THEM FIRST */}
   export const productData = {
-    Tazas: [shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4, shoe4],
-    Remeras: [shoe5, shoe5, shoe5],
-    Banderas: [shoe6, shoe6, shoe6],
-    Gorras: [shoe7],
-    Banners: [shoe7],
-    Ploteados: [shoe7],
-    Botineros: [shoe7],
-    Mochilas: [shoe7],
+    Tazas: [taza1, taza2],
+    Remeras: [remeraF1, remeraT1, remera2],
+    Banderas: [bandera1, bandera2],
+    Gorras: [gorra1],
+    Banners: [banner],
+    Ploteados: [sobreNosotros1],
+    Botineros: [mochila2],
+    Accesorios: [accesorio1, accesorio2],
   };
 export const footerLinks = [
     {
