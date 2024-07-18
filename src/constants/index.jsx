@@ -8,18 +8,18 @@ export const navItems = [
 import { facebook, instagram, twitter } from "../assets/icons";
 import { thumbnailImg1, thumbnailImg2, thumbnailImg3 } from "../assets/images";
 import { accesorio1, accesorio2, bandera1, bandera2, banner, gorra1, mochila2, ploteado1, remera2, remeraF1, remeraT1, sobreNosotros1, taza1, taza2 } from "../assets/images";
-export const shoes = [
+export const thumbnails = [
     {
         thumbnail: thumbnailImg1,
-        bigShoe: thumbnailImg1,
+        bigImg: thumbnailImg1,
     },
     {
         thumbnail: thumbnailImg2,
-        bigShoe: thumbnailImg2,
+        bigImg: thumbnailImg2,
     },
     {
         thumbnail: thumbnailImg3,
-        bigShoe: thumbnailImg3,
+        bigImg: thumbnailImg3,
     },
 ];
 

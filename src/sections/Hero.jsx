@@ -1,8 +1,8 @@
 import Button from "../components/Button";
 import { useState } from "react";
 import { arrowRight } from "../assets/icons";
-import { shoes } from "../constants";
-import ShoeCard from "../components/ShoeCard";
+import { thumbnails } from "../constants";
+import ImgCard from "../components/ImgCard";
 import { thumbnailImg1 } from "../assets/images";
 
 const Hero = () => {
@@ -36,16 +36,16 @@ const Hero = () => {
       <div className="relative flex-1 flex flex-col justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <img
           src={thumbnailImg}
-          alt="shoe collection"
-          width={610}
-          height={502}
+          alt="product collection"
+          width={400}
+          height={200}
           className="object-contain relative z-10"
         />
         {/* Muestra ShoeCards debajo de la imagen del zapato */}
         <div className="flex flex-wrap justify-center gap-6 sm:gap-4 max-sm:px-6 mt-6 sm:absolute sm:-bottom-[5%] sm:left-[10%]">
-          {shoes.map((image, index) => (
+          {thumbnails.map((image, index) => (
             <div key={index} className="w-1/2 sm:w-auto">
-              <ShoeCard
+              <ImgCard
                 imgUrl={image}
                 changeThumbnailImage={setThumbnailImg}
                 thumbnailImg={thumbnailImg}
