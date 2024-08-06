@@ -32,7 +32,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* Muestra imágenes de zapatos */}
+      {/* Muestra imágen principal */}
       <div className="relative flex-1 flex flex-col justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <img
           src={thumbnailImg}
@@ -41,7 +41,7 @@ const Hero = () => {
           height={200}
           className="object-contain relative z-10"
         />
-        {/* Muestra ShoeCards debajo de la imagen del zapato */}
+        {/* Muestra productos destacados debajo de la imagen principal */}
         <div className="flex flex-wrap justify-center gap-6 sm:gap-4 max-sm:px-6 mt-6 sm:absolute sm:-bottom-[5%] sm:left-[10%]">
           {thumbnails.map((image, index) => (
             <div key={index} className="w-1/2 sm:w-auto">
