@@ -1,18 +1,13 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { navItems } from "../constants";
+import HandleNavigation from "../components/HandleNavNavigation";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   const toggleNavBar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
-  };
-
-  const handleInicioClick = () => {
-    window.scrollTo(0, 0);
   };
 
   return (
@@ -27,20 +22,7 @@ const Navbar = () => {
 
           {/* Handle items from ./constants */}
           <ul className="hidden lg:flex ml-14 space-x-12">
-            {navItems.map((item, index) => (
-              <li key={index}>
-                {item.href.startsWith("/") ? (
-                  <Link
-                    to={item.href}
-                    onClick={item.label === "Inicio" ? handleInicioClick : null}
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <a href={item.href}>{item.label}</a>
-                )}
-              </li>
-            ))}
+            <HandleNavigation />
           </ul>
 
           {/* User */}
@@ -68,22 +50,7 @@ const Navbar = () => {
         {mobileDrawerOpen && (
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
-              {navItems.map((item, index) => (
-                <li key={index} className="py-4">
-                  {item.href.startsWith("/") ? (
-                    <Link
-                      to={item.href}
-                      onClick={
-                        item.label === "Inicio" ? handleInicioClick : null
-                      }
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <a href={item.href}>{item.label}</a>
-                  )}
-                </li>
-              ))}
+              <HandleNavigation />
             </ul>
 
             <div className="flex space-x-6">
