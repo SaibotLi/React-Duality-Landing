@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './sections/Navbar';
-import Hero from './sections/Hero';
-import ShowProducts from './sections/ShowProducts';
-import Products from './sections/Products';
-import Contacto from './sections/Contacto';
-import Footer from './sections/Footer';
-import AboutUs from './sections/AboutUs';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
+import ShowProducts from "./sections/ShowProducts";
+import Products from "./sections/Products";
+import Contacto from "./sections/Contacto";
+import Footer from "./sections/Footer";
+// import AboutUs from "./sections/AboutUs";
 
 const App = () => {
   return (
@@ -13,26 +13,33 @@ const App = () => {
       <main className="relative">
         <Navbar />
         <Routes>
-          <Route exact path="/" element={
-            <>
-              <section className="xl:padding-l wide:padding-r padding-b">
-                <Hero />
-              </section>
-              <section>
-                <ShowProducts />
+          <Route
+            exact
+            path="/"
+            element={
+              <>
+                <section className="xl:padding-l wide:padding-r padding-b">
+                  <Hero />
+                </section>
+                <section>
+                  <ShowProducts />
                 </section>
                 <Contacto />
                 <Footer />
-            </>
-          } />
-          <Route path="/products" element=
-          {
-            <>
-            <Products />
-            <Contacto />
-            <Footer />       
-            </>     
-          } />
+              </>
+            }
+          />
+          <Route
+            path="/products"
+            element={
+              <>
+                <Products />
+                <Contacto />
+                <Footer />
+              </>
+            }
+          />
+          {/* Ruta a "AboutUs - Work In Progress "
           <Route path="/sobreNosotros" element={
             <>
             <AboutUs />
@@ -40,6 +47,7 @@ const App = () => {
             <Footer /> 
             </>
             } />
+             */}
         </Routes>
       </main>
     </Router>
