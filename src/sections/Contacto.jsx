@@ -49,7 +49,7 @@ const Contacto = () => {
             required
             id='message'
         name="message"
-        placeholder="Hola, ¿Cuánto me saldrían 5 remeras negras talle L personalizadas? Las necesito ya. Escribime y te paso el diseño, mi número es 3455123123."
+        placeholder="Hola, ¿Cuánto me saldrían 5 remeras negras talle L personalizadas? Las necesito ya. Escribime y te paso el diseño, mi número es 3455-123123."
         className="mb-4 p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 w-3/4 mx-auto"
       />
       <input 

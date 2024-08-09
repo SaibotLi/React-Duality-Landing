@@ -24,8 +24,8 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             <HandleNavigation />
           </ul>
-
-          {/* User */}
+{/* WORK IN PROGRESS 
+          // User
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a href="#" className="py-2 px-3 border rounded-md">
               Iniciar sesión
@@ -37,7 +37,7 @@ const Navbar = () => {
               Registrarse
             </a>
           </div>
-
+          */}
           {/* Adds mobile menu button */}
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavBar}>
@@ -53,6 +53,7 @@ const Navbar = () => {
               <HandleNavigation />
             </ul>
 
+           {/* WORK IN PROGRESS
             <div className="flex space-x-6">
               <a href="#" className="py-2 px-3 border rounded-md">
                 Iniciar sesión
@@ -64,6 +65,7 @@ const Navbar = () => {
                 Registrarse
               </a>
             </div>
+        */}
           </div>
         )}
       </div>
