@@ -18,5 +18,3 @@ https://dualitypersonaliza2.vercel.app/
 - TailwindCSS: Used for styling components responsively, ensuring the application looks great on all devices.
 - Node.js: For package and dependency management.
 - Git: Version control for efficient development.
-
-![Dualityyy](https://github.com/user-attachments/assets/1b8d33eb-2511-4282-b6d0-cb7f3efdf5b6)
